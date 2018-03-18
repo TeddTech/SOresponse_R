@@ -10,7 +10,8 @@ LazyData: true
 RoxygenNote: 6.0.1
 Imports:
   rvest (>= 0.3.2),
-  xml2 (>= 1.2.0)
+  xml2 (>= 1.2.0),
+  tidyverse
 Suggests:
     testthat (>= 2.0.0),
     knitr (>= 1.20),
