@@ -10,7 +10,7 @@ test_that("There is no accepted answer",{
 
 })
 
-test_that("There are no answers",{
+test_that("Thlere are no answers",{
   expect_error(popular(url2),"There is no response!") #checks if there are responses to the question
 
 })
@@ -43,5 +43,5 @@ test_that("popular is correct as normal case",{#test the response maps the url
 
 #test the response_stats is correct
 test_that("response_stats is correct",{
-  expect_equal(response_stats(url),c(16,  20432.88, 230000,  18400))
+  expect_equal(response_stats(url),c(16,  20439.38462, 230000,  18400))
 })

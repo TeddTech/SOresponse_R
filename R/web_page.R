@@ -10,19 +10,16 @@
 #' @examples
 #' #'web_page('https://stackoverflow.com/questions/3505701/grouping-functions-tapply-by-aggregate-and-the-apply-family')
 
+url <- 'https://courses.students.ubc.ca/cs/main?pname=subjarea&tname=subjareas&req=1&dept=DSCI'
 
 web_page <- function(url) {
-  require(xml2)
-  require(rvest)
-  require(stringr)
-  require(tidyverse)
 
   response_page <- xml2::read_html(url) # Loads URL
-  question <- response_page %>% # Pulls question
-    rvest::html_nodes('#question-header .question-hyperlink') %>%
+  item <- response_page %>% # Pulls question
+    rvest::html_nodes('##mainTable a') %>%
     rvest::html_text()
 
-  print(question) #prints question
-  #return(url) # returns url
+  #print(question) #prints question
+  return(item) # returns url
 
 }

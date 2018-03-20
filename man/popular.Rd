@@ -15,7 +15,7 @@ popular(url, type = "likes")
 reponse Returns a response. This will be of a character type.
 }
 \description{
-Loads Returns most popular response on webpage.
+Returns most popular response on webpage.
 }
 \examples{
 #'popular('https://stackoverflow.com/questions/3505701/grouping-functions-tapply-by-aggregate-and-the-apply-family', type="likes")
